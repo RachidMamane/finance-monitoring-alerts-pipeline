@@ -56,7 +56,5 @@ def stream_data_real_time(stocks):
         producer.close()
 
 
-#stream_data_real_time(["AAPL", "GOOGL", "TSLA", "BTC", "ETH"])
+stream_data_real_time(["AAPL", "GOOGL", "TSLA", "BTC", "ETH"])
 
-date = datetime.now().isoformat()
-print(type(date))
