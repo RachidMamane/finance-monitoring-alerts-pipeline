@@ -40,8 +40,7 @@ def create_stock_index_mapping(es_client, stock_symbol: str):
                     "is_anomaly": {"type": "boolean"},
                     "anomaly_type": {"type": "keyword"}, 
                     "anomaly_score": {"type": "float"},
-                    # Si vous ajoutez des explications LLM plus tard:
-                    # "llm_explanation": {"type": "text"},
+                    
                 }
             }
         }
@@ -51,7 +50,7 @@ def create_stock_index_mapping(es_client, stock_symbol: str):
         except Exception as e:
             print(f"Erreur lors de la création de l'index '{index_name}': {e}")
     else:
-        # print(f"Index '{index_name}' existe déjà.") # Décommenter pour voir cette info à chaque fois
+        # print(f"Index '{index_name}' existe déjà.") 
         pass 
 
 def index_stock_data(es_client, data: dict):
