@@ -1,0 +1,9 @@
+kafka-python 
+celery 
+redis 
+requests
+elasticsearch 
+beautifulsoup4
+apache-airflow
+fastapi
+uvicorn 
